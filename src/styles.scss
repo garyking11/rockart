@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+#regions {
+
+}
+
+
+.region {
+  img {
+    max-width: 100%;
+
+  }
+}
+
+html, body {
+
+}
+
+#app {
+  //background: url("assets/images/background1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+body {
+
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

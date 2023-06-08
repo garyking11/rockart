@@ -1,0 +1,122 @@
+<div id="admin" class="container" *ngIf="adminInterface">
+
+  <div class="row">
+    <div class="h1">Admin</div>
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="h2">Regions Admin</div>
+      <button type="button" (click)="saveRegion(adminInterface)">SAVE REGION</button>
+      <h3>Add Region</h3>
+
+      <button type="button" (click)="addRegion()">ADD REGION</button>
+
+
+      <div *ngFor="let item of adminInterface.regions;  let i = index"
+           [ngClass]="{ odd: odd, even: even }" cdkDrag>
+
+        <mat-form-field>
+          <mat-label>Image</mat-label>
+<!--          [(ngModel)]="item.image"-->
+          <input matInput
+                 type="text"
+                 required
+                 name="image"
+                 placeholder="Image">
+        </mat-form-field>
+
+        <button type="button" mat-raised-button (click)="addRegion()">
+          <mat-icon class="mat-18 sesame-blue">add</mat-icon>
+          Add
+        </button>
+
+        <!-- delete method -->
+        <span class=" text-danger"
+              (click)="removeRegion(i)">
+                            <mat-icon>delete</mat-icon>
+                            </span>
+        <div class="clear"></div>
+      </div>
+
+      <span *ngIf="locationsInterface"></span>
+      <div *ngFor="let loc of adminInterface.locations">
+<!--        *ngFor="let loc of locationsInterface.locations"-->
+          <div>
+            <mat-form-field>
+              <mat-label>Name</mat-label>
+              <input matInput
+                     type="text"
+                     required
+                     placeholder="">
+            </mat-form-field>
+          </div>
+
+          <div>
+            <mat-form-field>
+              <mat-label>Link</mat-label>
+<!--              [(ngModel)]="loc.link"-->
+              <input matInput
+                     type="text"
+                     required
+                     placeholder="">
+            </mat-form-field>
+          </div>
+        </div>
+
+
+
+      <h3>Update Region Region</h3>
+  </div>
+
+
+
+
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="h2">Current</div>
+
+      <mat-accordion multi="false">
+        <div id="">
+          <!-- cdkDropList (cdkDropListDropped)="drop($event)"-->
+          <div *ngFor="let item of adminInterface.regions">
+            <mat-card class="region">
+
+              <h2>{{item.region}}</h2>
+              <div><img src="assets/images/{{item.image}}"></div>
+              <p>&nbsp;</p>
+              <p>{{item.regionLink}}</p>
+
+              <div *ngFor="let loc of adminInterface.locations">
+
+                <ul class="list-unstyled">
+                  <li><strong>{{loc.name}}</strong></li>
+                  <li>{{loc.map}}</li>
+                  <li>{{loc.comments}}</li>
+                  <li>{{loc.gpsCoordinates}}</li>
+                  <li>{{loc.directions}}</li>
+                </ul>
+              </div>
+
+            </mat-card>
+            &nbsp;
+          </div>
+
+        </div>
+      </mat-accordion>
+
+
+    </div>
+  </div>
+
+</div>
+  title: string;<br>
+  regions: Regions[];<br>
+  regionLink: string;<br>
+  image: string;<br>
+  region: string;<br>
+  locations: Locations[];<br>
+
+  name: string;<br>
+  link: string;<br>
+  map: string;<br>
+  gpsCoordinates: string;<br>
+  comments: string;<br>
+  directions: string;<br>
+

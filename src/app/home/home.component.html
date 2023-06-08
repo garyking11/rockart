@@ -1,0 +1,46 @@
+<div id="regions" class="container" *ngIf="homeInterFace">
+  <div class="row">
+    <div class="h1">Regions</div>
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="h2">Column One</div>
+
+      <mat-accordion multi="false">
+        <div id="">
+          <!-- cdkDropList (cdkDropListDropped)="drop($event)"-->
+          <div *ngFor="let item of homeInterFace.regions">
+            <mat-card class="region">
+
+              <h2>{{item.region}}</h2>
+              <div><img src="assets/images/{{item.image}}"></div>
+              <p>&nbsp;</p>
+              <p>{{item.regionLink}}</p>
+
+              <div *ngFor="let loc of item.locations">
+
+                <ul class="list-unstyled">
+                  <li><strong>{{loc.name}}</strong></li>
+                 <li>{{loc.map}}</li>
+                  <li>{{loc.comments}}</li>
+                  <li>{{loc.gpsCoordinates}}</li>
+                  <li>{{loc.directions}}</li>
+                </ul>
+              </div>
+
+            </mat-card>
+            &nbsp;
+          </div>
+
+        </div>
+      </mat-accordion>
+
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="h2">Column Two</div>
+    </div>
+
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="h2">Column Three</div>
+    </div>
+  </div>
+</div>

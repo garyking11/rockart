@@ -1,0 +1,100 @@
+{
+  "account": "My Account",
+  "regions": [
+    {
+      "region": "North",
+      "location": "location link",
+      "image": "background1.jpeg"
+    },
+    {
+      "region": "East",
+      "location": "location link",
+      "image": "background2.JPG"
+    },
+    {
+      "region": "South",
+      "location": "location link",
+      "image": "background3.JPG"
+    },
+    {
+      "region": "West",
+      "location": "location link",
+      "image": "background4.jpeg"
+    }
+  ],
+
+  "locations": [
+    {
+      "region": "North",
+      "name": "Up Paddle Creek",
+      "link": "link to website",
+      "map": "link to map",
+      "gpsgpsCoordinates": "gpsCoordinates",
+      "comments": "comments",
+      "directions": "directions"
+    },
+    { "region": "South",
+      "name": "Down Paddle Creek",
+      "link": "link to website1",
+      "map": "link to map1",
+      "gpsCoordinates": "gpsCoordinates1",
+      "comments": "comments1",
+      "directions": "directions1"
+    },
+    {
+      "region": "South",
+      "name": "Up The Creek",
+      "link": "link to website",
+      "map": "link to map",
+      "gpsCoordinates": "gpsCoordinates",
+      "comments": "comments",
+      "directions": "directions"
+    },
+    {
+      "region": "East",
+      "name": "Down The Creek",
+      "link": "link to website1",
+      "map": "link to map1",
+      "gpsCoordinates": "gpsCoordinates1",
+      "comments": "comments1",
+      "directions": "directions1"
+    },
+    {
+      "region": "North",
+      "name": "Over the Creek",
+      "link": "link to website",
+      "map": "link to map",
+      "gpsCoordinates": "gpsCoordinates",
+      "comments": "comments",
+      "directions": "directions"
+    },
+    {
+      "region": "West",
+      "name": "Under Down Creek",
+      "link": "link to website1",
+      "map": "link to map1",
+      "gpsCoordinates": "gpsCoordinates1",
+      "comments": "comments1",
+      "directions": "directions1"
+    },
+    {
+      "region": "South",
+      "name": "Up Creek",
+      "link": "link to website",
+      "map": "link to map",
+      "gpsCoordinates": "gpsCoordinates",
+      "comments": "comments",
+      "directions": "directions"
+    },
+    {
+      "region": "East",
+      "name": "Down Creek",
+      "link": "link to website1",
+      "map": "link to map1",
+      "gpsCoordinates": "gpsCoordinates1",
+      "comments": "comments1",
+      "directions": "directions1"
+    }
+  ]
+}
+
