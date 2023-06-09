@@ -7,6 +7,8 @@ import {DragDropModule} from "@angular/cdk/drag-drop";
 import {MatInputModule} from "@angular/material/input";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {HttpClient, HttpClientModule, HttpHeaders} from "@angular/common/http";
+import {FormsModule} from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -18,13 +20,14 @@ import {HttpClient, HttpClientModule, HttpHeaders} from "@angular/common/http";
   declarations: [],
   imports: [
     CommonModule,
-    HttpClientModule,
     MatCardModule,
-    MatSnackBarModule,
-    MatExpansionModule,
-    DragDropModule,
     MatInputModule,
     MatFormFieldModule,
+    FormsModule,
+    MatIconModule,
+    MatSnackBarModule,
+    MatExpansionModule,
+    DragDropModule
   ]
 })
 export class AdminModule { }

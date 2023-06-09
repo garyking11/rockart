@@ -1,9 +1,11 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {MatExpansionModule} from "@angular/material/expansion";
+import {MatAccordion, MatExpansionModule} from "@angular/material/expansion";
 import {DragDropModule} from "@angular/cdk/drag-drop";
 import {MatCardModule} from "@angular/material/card";
 import {MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatFormFieldModule, MatLabel} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -14,10 +16,15 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
   declarations: [],
   imports: [
     CommonModule,
+
     MatCardModule,
     MatSnackBarModule,
     MatExpansionModule,
-    DragDropModule
+    DragDropModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatCardModule
+
   ]
 })
 export class HomeModule {

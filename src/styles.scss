@@ -8,7 +8,6 @@
 .region {
   img {
     max-width: 100%;
-
   }
 }
 
@@ -24,6 +23,16 @@ html, body {
 
 
 body {
-
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+nav#main-menu {
+  margin: 20px 0;
+  a {
+    display: inline;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #c77e11;
+    text-transform: uppercase;
+  }
 }

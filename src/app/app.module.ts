@@ -7,14 +7,20 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatExpansionModule} from "@angular/material/expansion";
+
 import {HttpClient, HttpClientModule, HttpHeaders} from "@angular/common/http";
-import {MatCardModule} from "@angular/material/card";
+
 import { AdminComponent } from './admin/admin.component';
-import {MatFormFieldModule} from "@angular/material/form-field";
+
 import {FormsModule} from "@angular/forms";
-import {MatInputModule} from "@angular/material/input";
-import {MatIconModule} from "@angular/material/icon";
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
 
 @NgModule({
   declarations: [
@@ -29,13 +35,14 @@ import {MatIconModule} from "@angular/material/icon";
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatExpansionModule,
-    HttpClientModule,
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule,
+    MatExpansionModule,
+    DragDropModule
   ],
   providers: [ HttpClient],
   bootstrap: [AppComponent]

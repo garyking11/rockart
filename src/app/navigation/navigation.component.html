@@ -1,7 +1,10 @@
-<nav>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/about-us">About Us</a></li>
-    <li><a routerLink="/admin">Admin</a></li>
-  </ul>
-</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <nav id="main-menu">
+        <a class="dropdown-item" *ngFor="let item of mainMenuArray"
+           [routerLink]="[item.routerLink]">{{item.display}}</a>
+      </nav>
+    </div>
+  </div>
+</div>
