@@ -20,6 +20,7 @@ export class GetRegionsService {
   getRegions(): Observable<any> {
     console.log('regions in service')
     return this.http.get<any>(this.regionsUrl);
+
   }
 
   getLocations(): Observable<any> {

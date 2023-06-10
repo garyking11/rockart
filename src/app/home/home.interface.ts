@@ -1,21 +1,24 @@
 export interface HomeInterface {
   title: string;
   regions: Regions[];
-
+  locations: Location[];
 }
 
 export interface Regions {
-  regionLink: string;
+
   image: string;
   region: string;
-  locations: Locations[];
+   locations: Location[];
 }
 
-export interface Locations {
+export interface Location {
+  region: string;
   name: string;
+  description: string;
   link: string;
   map: string;
   gpsCoordinates: string;
   comments: string;
   directions: string;
+  image: string;
 }

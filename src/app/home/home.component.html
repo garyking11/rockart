@@ -1,76 +1,51 @@
-<div id="regions" class="container" *ngIf="homeInterface">
-<!--  <div id="locations" class="container" *ngIf="homeInterfaceLocations.regions"></div>-->
+<div id="sites" class="container" *ngIf="homeInterface">
+
   <div class="row">
 
     <div class="col-sm-12 col-md-4 col-lg-4">
+      <h1 class="">Regions</h1>
 
+      <div *ngFor="let loc of homeInterface.locations" style="color: red;">
+        {{loc.name}}
+      </div>
       <mat-accordion multi="false">
-        <div id="" cdkDropList (cdkDropListDropped)="drop($event)">
-        <div *ngFor="let item of homeInterface.regions
-                 let i = index; let even = even; let odd = odd" cdkDrag>
 
-        <mat-expansion-panel hideToggle style="color: #0099cc;">
-          {{item.region}}
-          <mat-expansion-panel-header>
+        <div id="regions" cdkDropList (cdkDropListDropped)="drop($event)">
+
+          <div class="region" *ngFor="let item of homeInterface.regions" cdkDrag>
             <mat-panel-title>
-              {{item.image}}
-              {{item.region}}
-              {{item.locations}}
+
+
             </mat-panel-title>
-            <mat-panel-description>
-<!--              {{item.regionLink}}-->
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          <p>This is the primary content of the panel.</p>
-        </mat-expansion-panel>
+
+            <mat-expansion-panel style="color: #0099cc;">
+
+              <mat-expansion-panel-header>
+                {{item.region}}
+              </mat-expansion-panel-header>
+
+              <div *ngFor="let loc of item.locations" style="color: red;">
+                {{loc.name}} link
+                {{loc.region}}<br>
+                {{loc.link}}<br>
+                {{loc.map}} <br>
+                {{loc.gpsCoordinates}} <br>
+                {{loc.comments}} <br>
+                {{loc.directions}} <br>
+                <img src="assets/images/{{loc.image}}" alt="">
+
+                <mat-panel-description>
+                  {{loc.description}}
+                </mat-panel-description>
+                <br><br>
+              </div>
+
+            </mat-expansion-panel>
+
+          </div>
 
         </div>
 
-
-          xxxxxxxxxxxxxx
-
-          <div *ngFor="let item of homeInterface.regions
-                 let i = index; let even = even; let odd = odd" cdkDrag>
-            {{item.image}}
-            {{item.locations}}
-            {{item.region}}
-          </div>
-
-
-
-<!--          <div id="" cdkDropList (cdkDropListDropped)="drop($event)">-->
-
-            <!--<div *ngFor="let item of homeInterface.regions
-                 let i = index; let even = even; let odd = odd" cdkDrag>
-
-              {{item.image}}
-              <mat-expansion-panel hideToggle>
-                {{item.region}}
-                 <mat-card class="region">
-
-                <h2>{{item.region}}</h2>
-                <div><img src="assets/images/{{item.image}}"></div>
-                <p>&nbsp;</p>
-                <p>{{item.regionLink}}</p>
-
-                <div *ngFor="let loc of item.locations">
-
-                  <ul class="list-unstyled">
-                    <li><strong>{{loc.name}}</strong></li>
-                    <li>{{loc.map}}</li>
-                    <li>{{loc.comments}}</li>
-                    <li>{{loc.gpsCoordinates}}</li>
-                    <li>{{loc.directions}}</li>
-                  </ul>
-                </div>
-
-              </mat-card>
-            </mat-expansion-panel>
-
-          </div>-->
-
-          </div>
-<!--        </div>-->
       </mat-accordion>
 
     </div>
@@ -84,3 +59,4 @@
     </div>
   </div>
 </div>
+
