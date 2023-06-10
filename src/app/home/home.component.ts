@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {CdkDragDrop, CdkDropList, CdkDrag, moveItemInArray} from "@angular/cdk/drag-drop";
+import {CdkDragDrop, CdkDropList, CdkDrag, moveItemInArray} from "@angular/cdk/drag-drop";
 import {HomeInterface} from "./home.interface";
 import {GetRegionsService} from "../services/get-regions.service";
 @Component({
@@ -9,7 +9,8 @@ import {GetRegionsService} from "../services/get-regions.service";
 })
 export class HomeComponent implements OnInit {
 
-  public homeInterFace?: HomeInterface;
+  public homeInterface?: HomeInterface;
+  // public homeInterfaceLocations?: HomeInterface | undefined;
   // public i: any;
 
   constructor(
@@ -22,12 +23,12 @@ export class HomeComponent implements OnInit {
     this.getRegionValues();
   }
 
-  /*drop(event:CdkDragDrop<HomeInterface>){
-    if(!this.homeInterFace){
+  drop(event:CdkDragDrop<HomeInterface>){
+    if(!this.homeInterface){
       return;
     }
-     moveItemInArray((this.homeInterFace.regions), event.previousIndex, event.currentIndex);
-  }*/
+     moveItemInArray((this.homeInterface.regions), event.previousIndex, event.currentIndex);
+  }
 
   getRegionValues(){
     /*if(!this.homeInterFace){
@@ -36,8 +37,8 @@ export class HomeComponent implements OnInit {
 
     this._getRegionsService.getRegions().subscribe({
         next: (homeInterface: HomeInterface) => {
-          this.homeInterFace = homeInterface;
-          this.homeInterFace.regions = homeInterface.regions;
+          this.homeInterface = homeInterface;
+          this.homeInterface.regions = homeInterface.regions;
           // console.log(this.adminInterFace.regions);
         }
       }
