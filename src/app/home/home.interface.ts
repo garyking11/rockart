@@ -8,7 +8,7 @@ export interface Regions {
 
   image: string;
   region: string;
-   locations: Location[];
+  locations: Location[];
 }
 
 export interface Location {
@@ -18,6 +18,8 @@ export interface Location {
   link: string;
   map: string;
   gpsCoordinates: string;
+  latitude: string;
+  longitude: string;
   comments: string;
   directions: string;
   image: string;

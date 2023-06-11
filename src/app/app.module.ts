@@ -16,6 +16,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { AgmMapComponent } from './agm-map/agm-map.component';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     HomeComponent,
     NavigationComponent,
     AboutusComponent,
-    AdminComponent
+    AdminComponent,
+    AgmMapComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatSnackBarModule,
     MatExpansionModule,
     DragDropModule
+
   ],
   providers: [ HttpClient],
   bootstrap: [AppComponent]

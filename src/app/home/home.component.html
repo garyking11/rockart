@@ -12,22 +12,24 @@
 
         <div id="regions" cdkDropList (cdkDropListDropped)="drop($event)">
 
-          <div class="region" *ngFor="let item of homeInterface.regions" cdkDrag>
+          <div class="region" *ngFor="let item of homeInterface.regions;  let i = index;" cdkDrag>
             <mat-panel-title>
 
 
             </mat-panel-title>
 
-            <mat-expansion-panel style="color: #0099cc;">
-
+            <mat-expansion-panel style="color: #0099cc;" >
+<!--              [expanded]="true"-->
               <mat-expansion-panel-header>
                 {{item.region}}
               </mat-expansion-panel-header>
 
-              <div *ngFor="let loc of item.locations" style="color: red;">
+              <div *ngFor="let loc of item.locations">
                 {{loc.name}} link
                 {{loc.region}}<br>
-                {{loc.link}}<br>
+                {{i + 1}}<br>
+                <span style="color: #ff5a00;" (click)="getGoogleMap(loc.map)" target="_blank">Get Map</span><br>
+                {{loc.link}}
                 {{loc.map}} <br>
                 {{loc.gpsCoordinates}} <br>
                 {{loc.comments}} <br>
@@ -50,9 +52,7 @@
 
     </div>
 
-    <div class="col-sm-12 col-md-4 col-lg-4">
-
-    </div>
+    <div class="col-sm-12 col-md-6 col-lg-8">
 
     <div class="col-sm-12 col-md-4 col-lg-4">
 

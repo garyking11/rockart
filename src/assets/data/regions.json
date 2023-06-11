@@ -10,8 +10,10 @@
           "region": "EEE",
           "name": "N",
           "link": "LW",
-          "map": "link to map",
+          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
           "gpsCoordinates": "41.40338, 2.17403",
+          "latitude": "41.40338",
+          "longitude": "2.17403",
           "comments": "comments",
           "directions": "directions",
           "image": "background1.jpeg"
@@ -22,6 +24,8 @@
           "link": "LW",
           "map": "link to map",
           "gpsCoordinates": "41.40338, 2.17403",
+          "latitude": "41.40338",
+          "longitude": "2.17403",
           "comments": "comments",
           "directions": "directions",
           "image": "background4.jpeg"
@@ -37,112 +41,106 @@
           "region": "TTT",
           "name": "O",
           "link": "B",
-          "map": "link to map",
+          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
           "gpsCoordinates": "41.40338, 2.17403",
+          "latitude": "41.40338",
+          "longitude": "2.17403",
           "comments": "comments",
           "directions": "directions",
-          "image": "background2.jpg"
+          "image": "background2.JPG"
         }
       ]
     },
     {
-      "region": "Utah",
+      "region": "New Mexico",
       "location": "location link",
       "image": "Utah.jpeg",
       "locations": [
         {
           "region": "New Mexico",
           "name": "Up Paddle Creek",
-          "link": "link to website",
-          "map": "link to map",
+          "link": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
           "gpsCoordinates": "41.40338, 2.17403",
+          "latitude": "41.40338",
+          "longitude": "2.17403",
           "comments": "comments",
           "directions": "directions",
-          "image": "background3.jpg"
+          "image": "background3.JPG"
         }
       ]
     },
     {
-      "region": "Nevada",
-      "name": "Over the Creek",
-      "link": "link to website",
-      "map": "link to map",
-      "description": "Located up the hill and to the right.",
-      "gpsCoordinates": "41.40338, 2.17403",
-      "comments": "comments",
-      "directions": "directions",
-      "locations": [
-      {
-        "region": "Utah",
-        "name": "Up Paddle Creek",
-        "link": "link to website",
-        "map": "link to map",
-        "gpsCoordinates": "41.40338, 2.17403",
-        "comments": "comments",
-        "directions": "directions",
-        "image": "background3.jpg"
-      }
-    ]
-    },
-    {
-      "region": "South",
-      "name": "Up Creek",
-      "link": "link to website",
-      "map": "link to map",
-      "description": "Located up the hill and to the right.",
-      "gpsCoordinates": "41.40338, 2.17403",
-      "comments": "comments",
-      "directions": "directions",
-      "image": "background3.jpg",
-      "locations": [
-      {
-        "region": "Utah",
-        "name": "Up Paddle Creek",
-        "link": "link to website",
-        "map": "link to map",
-        "gpsCoordinates": "41.40338, 2.17403",
-        "comments": "comments",
-        "directions": "directions",
-        "image": "background3.jpg"
-      }
-    ]
-    },
-    {
-      "region": "Utah",
+      "region": "California",
       "location": "location link",
       "image": "Utah.jpeg",
       "locations": [
+      {
+        "region": "California",
+        "name": "Up Paddle Creek",
+        "link": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+        "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+        "gpsCoordinates": "41.40338, 2.17403",
+        "comments": "comments",
+        "directions": "directions",
+        "image": "background3.JPG"
+      }
+    ]
+    },
+    {
+      "region": "Washington",
+      "location": "location link",
+      "image": "Washington.jpeg",
+      "locations": [
+      {
+        "region": "Washington",
+        "name": "Up Paddle Creek",
+        "link": "",
+        "map": "https://goo.gl/maps/ZqTgg13tNDhmgP9c9",
+        "gpsCoordinates": "41.40338, 2.17403",
+        "latitude": "41.40338",
+        "longitude": "2.17403",
+        "comments": "comments",
+        "directions": "directions",
+        "image": "background3.JPG"
+      }
+    ]
+    },
+    {
+      "region": "Oregon",
+      "location": "location link",
+      "image": "Oregon.jpeg",
+      "locations": [
         {
-          "region": "Utah",
+          "region": "Oregon",
           "name": "Up Paddle Creek",
-          "link": "link to website",
-          "map": "link to map",
+          "link": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
           "gpsCoordinates": "41.40338, 2.17403",
+          "latitude": "41.40338",
+          "longitude": "2.17403",
           "comments": "comments",
           "directions": "directions",
-          "image": "background3.jpg"
+          "image": "background3.JPG"
         }
       ]
     },
     {
       "region": "Mexico",
-      "name": "Up Creek",
-      "link": "link to website",
-      "map": "link to map",
-      "description": "Located up the hill and to the right.",
-      "gpsCoordinates": "41.40338, 2.17403",
-      "comments": "comments",
-      "directions": "directions",
+      "location": "location link",
+      "image": "Utah.jpeg",
       "locations": [
         {
-          "region": "Mexicoah",
+          "region": "Mexico",
           "name": "Up Paddle Creek",
-          "link": "link to website",
-          "map": "link to map",
+          "link": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
           "gpsCoordinates": "41.40338, 2.17403",
+          "latitude": "41.40338",
+          "longitude": "2.17403",
           "comments": "comments",
           "directions": "directions",
-          "image": "background3.jpg"
+          "image": "background3.JPG"
         }
       ]
     }
