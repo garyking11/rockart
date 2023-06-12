@@ -16,7 +16,7 @@ export class NavigationComponent implements OnInit {
   mainMenuArray = [
     {display: 'home', routerLink: ''},
     {display: 'about us', routerLink: 'about-us'},
-    {display: 'admin', routerLink: 'admin'}
+    // {display: 'admin', routerLink: 'admin'}
   ]
 
 }

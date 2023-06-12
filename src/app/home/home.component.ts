@@ -4,6 +4,7 @@ import {HomeInterface} from "./home.interface";
 import {LocationsInterface} from '../admin/locations.interface';
 import {GetRegionsService} from "../services/get-regions.service";
 import {Router} from '@angular/router';
+import {count} from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -54,6 +55,8 @@ export class HomeComponent implements OnInit, AfterContentChecked {
           this.homeInterface = homeInterface;
           this.homeInterface.regions = homeInterface.regions;
           this.homeInterface.locations = homeInterface.locations;
+
+
           console.log(this.homeInterface?.regions);
         }
       }
@@ -68,15 +71,5 @@ export class HomeComponent implements OnInit, AfterContentChecked {
   }
 //"https://goo.gl/maps/tW5JBiUbUcoBDSeq5"
 
-  getLocationValues() {
-    /*    this._getRegionsService.getLocations().subscribe({
-            next: (homeInterface: LocationsInterface) => {
-              this.homeInterface?.regions = homeInterface;
-              this.homeInterface.locations = homeInterface?.locations;
-                console.log(this.homeInterface?.locations);
-
-            }
-          }
-        )*/
-  }
+  getLocationValues() {}
 }

@@ -1,71 +1,92 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-#regions {
-
-}
-
-
-#regions {
-  img {
-    max-width: 100%;
-  }
-
-  h1 {
-    font-size: .50em !important;
-  }
-
-  h2 {
-    font-size: 1.75em;
-  }
-
-  h3 {
-    font-size: .75em;
-  }
-
-  h4 {
-    font-size: .5em;
-  }
-
-  h5 {
-    font-size: .5em;
-  }
-
-
-}
-
-html, body {
-
-}
-
-#app {
-  //background: url("assets/images/background1.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
-
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-}
 
-nav#main-menu {
-  margin: 20px 0;
+  #regions {
+    span.getMapLink {
+      color: rgb(144, 190, 16);
+      cursor: pointer;
+    }
 
-  a {
-    display: inline;
-    margin-top: 20px;
-    margin-right: 20px;
-    color: #c77e11;
-    text-transform: uppercase;
+    hr {
+      overflow: visible; /* For IE */
+      padding: 0;
+      border: none;
+      border-top: medium double #333;
+      color: #333;
+      text-align: center;
+
+    }
+
+    hr:after {
+      content: "§";
+      display: inline-block;
+      position: relative;
+      top: -0.7em;
+      font-size: 1.5em;
+      padding: 0 0.25em;
+      background: white;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .top_image {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.00em !important;
+      color: #d7770a;
+    }
+
+    h2 {
+      font-size: 1.25em;
+    }
+
+    h3 {
+      font-size: 1.0em;
+    }
+
+    h4 {
+      font-size: 1.0em;
+    }
+
+    h5 {
+      font-size: 1.0em;
+    }
+
+    strong {
+      color: #c77e11;
+    }
+
+    .numSitesAvailable {
+      color: #d7770a;
+    }
+
   }
-}
 
-/* Google Maps */
-/*agm-map {
-  height: 300px;
-}*/
 
-.full {
-  width: 100vw;
-  height: 100vh;
+  #app {
+    //background: url("assets/images/background1.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  nav#main-menu {
+    margin: 20px 0;
+
+    a {
+      display: inline;
+      margin-top: 20px;
+      margin-right: 20px;
+      color: #c77e11;
+      text-transform: uppercase;
+    }
+  }
+
 }

@@ -1,45 +1,69 @@
-<div id="sites" class="container" *ngIf="homeInterface">
+<div id="regions" class="container" *ngIf="homeInterface">
 
   <div class="row">
 
     <div class="col-sm-12 col-md-4 col-lg-4">
-      <h1 class="">Regions</h1>
 
-      <div *ngFor="let loc of homeInterface.locations" style="color: red;">
+
+      <h1>States</h1>
+
+      <div *ngFor="let loc of homeInterface.locations">
         {{loc.name}}
       </div>
       <mat-accordion multi="false">
 
-        <div id="regions" cdkDropList (cdkDropListDropped)="drop($event)">
+        <div id="" cdkDropList (cdkDropListDropped)="drop($event)">
 
           <div class="region" *ngFor="let item of homeInterface.regions;  let i = index;" cdkDrag>
             <mat-panel-title>
+              <h2>{{item.region}}&nbsp;</h2>
+
+              <div *ngIf="item.locations.length > 1; else lessThanOne">
+                <h2 class="numSitesAvailable">&nbsp;
+                  ({{item.locations.length}} Sites Available)
+                </h2>
+              </div>
+
+              <ng-template #lessThanOne>
+                <h2 class="numSitesAvailable">&nbsp;
+                  ({{item.locations.length}} Site Available)
+                </h2>
+              </ng-template>
 
 
             </mat-panel-title>
 
-            <mat-expansion-panel style="color: #0099cc;" >
-<!--              [expanded]="true"-->
+            <mat-expansion-panel style="color: #0099cc;">
+
               <mat-expansion-panel-header>
-                {{item.region}}
+
               </mat-expansion-panel-header>
+              <p></p>
+              <div>
 
-              <div *ngFor="let loc of item.locations">
-                {{loc.name}} link
-                {{loc.region}}<br>
-                {{i + 1}}<br>
-                <span style="color: #ff5a00;" (click)="getGoogleMap(loc.map)" target="_blank">Get Map</span><br>
-                {{loc.link}}
-                {{loc.map}} <br>
-                {{loc.gpsCoordinates}} <br>
-                {{loc.comments}} <br>
-                {{loc.directions}} <br>
-                <img src="assets/images/{{loc.image}}" alt="">
+                <mat-card *ngFor="let loc of item.locations">
 
-                <mat-panel-description>
-                  {{loc.description}}
-                </mat-panel-description>
-                <br><br>
+
+                  <img class="top-image" src="assets/images/{{loc.image}}" alt="">
+
+                  <h3><strong>Name: </strong>{{loc.name}}</h3>
+                  <strong>Region:</strong> {{item.region}}<br>
+
+                  <strong>Map URL: </strong><span class="getMapLink" (click)="getGoogleMap(loc.map)" target="_blank">Get Map to location</span><br>
+                  <strong>Latitude: </strong>{{loc.latitude}} <br>
+                  <strong>Longitude: </strong>{{loc.longitude}} <br>
+
+                  <p><strong>Comments: </strong> {{loc.comments}} <br></p>
+
+                  <mat-panel-description>
+                    <p><strong>Description: </strong>{{loc.description}}</p>
+                  </mat-panel-description>
+
+                  <p><strong>Directions:</strong> {{loc.directions}}</p>
+                  <hr>
+                </mat-card>
+
+
               </div>
 
             </mat-expansion-panel>
@@ -54,9 +78,9 @@
 
     <div class="col-sm-12 col-md-6 col-lg-8">
 
-    <div class="col-sm-12 col-md-4 col-lg-4">
+      <div class="col-sm-12 col-md-4 col-lg-4">
 
+      </div>
     </div>
   </div>
-</div>
 

@@ -8,27 +8,29 @@
       "locations": [
         {
           "region": "EEE",
-          "name": "N",
+          "name": "Up this hill location",
           "link": "LW",
-          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+          "map": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
           "gpsCoordinates": "41.40338, 2.17403",
           "latitude": "41.40338",
           "longitude": "2.17403",
-          "comments": "comments",
-          "directions": "directions",
-          "image": "background1.jpeg"
+          "description": "This is a great site showing the artwork of the local tribes.",
+          "directions": "Drive to trailhead and walk 2 miles up the creek.",
+          "image": "background1.jpeg",
+          "comments": "Watch out for snakes!"
         },
         {
           "region": "FFF",
-          "name": "G",
+          "name": "Up this hill location",
           "link": "LW",
           "map": "link to map",
           "gpsCoordinates": "41.40338, 2.17403",
           "latitude": "41.40338",
           "longitude": "2.17403",
-          "comments": "comments",
+          "description": "This is a great site showing the artwork of the local tribes.",
           "directions": "directions",
-          "image": "background4.jpeg"
+          "image": "background4.jpeg",
+          "comments": "Watch out for snakes!"
         }
       ]
     },
@@ -39,15 +41,16 @@
       "locations": [
         {
           "region": "TTT",
-          "name": "O",
+          "name": "Up this hill location",
           "link": "B",
-          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+          "map": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
           "gpsCoordinates": "41.40338, 2.17403",
           "latitude": "41.40338",
           "longitude": "2.17403",
-          "comments": "comments",
-          "directions": "directions",
-          "image": "background2.JPG"
+          "description": "This is a great site showing the artwork of the local tribes.",
+          "directions": "Drive to trailhead and walk 2 miles up the creek.",
+          "image": "background2.JPG",
+          "comments": "Watch out for snakes!"
         }
       ]
     },
@@ -59,14 +62,15 @@
         {
           "region": "New Mexico",
           "name": "Up Paddle Creek",
-          "link": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
-          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+          "link": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
+          "map": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
           "gpsCoordinates": "41.40338, 2.17403",
           "latitude": "41.40338",
           "longitude": "2.17403",
-          "comments": "comments",
-          "directions": "directions",
-          "image": "background3.JPG"
+          "description": "This is a great site showing the artwork of the local tribes.",
+          "directions": "Drive to trailhead and walk 2 miles up the creek.",
+          "image": "background3.JPG",
+          "comments": "Watch out for snakes!"
         }
       ]
     },
@@ -78,12 +82,13 @@
       {
         "region": "California",
         "name": "Up Paddle Creek",
-        "link": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
-        "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+        "link": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
+        "map": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
         "gpsCoordinates": "41.40338, 2.17403",
-        "comments": "comments",
-        "directions": "directions",
-        "image": "background3.JPG"
+        "description": "This is a great site showing the artwork of the local tribes.",
+        "directions": "Drive to trailhead and walk 2 miles up the creek.",
+        "image": "background3.JPG",
+        "comments": "Watch out for snakes!"
       }
     ]
     },
@@ -94,15 +99,16 @@
       "locations": [
       {
         "region": "Washington",
-        "name": "Up Paddle Creek",
+        "name": "Down Paddle Creek",
         "link": "",
         "map": "https://goo.gl/maps/ZqTgg13tNDhmgP9c9",
         "gpsCoordinates": "41.40338, 2.17403",
         "latitude": "41.40338",
         "longitude": "2.17403",
-        "comments": "comments",
-        "directions": "directions",
-        "image": "background3.JPG"
+        "description": "This is a great site showing the artwork of the local tribes.",
+        "directions": "Drive to trailhead and walk 2 miles up the creek.",
+        "image": "background3.JPG",
+        "comments": "Watch out for snakes!"
       }
     ]
     },
@@ -114,14 +120,15 @@
         {
           "region": "Oregon",
           "name": "Up Paddle Creek",
-          "link": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
-          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+          "link": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
+          "map": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
           "gpsCoordinates": "41.40338, 2.17403",
           "latitude": "41.40338",
           "longitude": "2.17403",
-          "comments": "comments",
-          "directions": "directions",
-          "image": "background3.JPG"
+          "description": "This is a great site showing the artwork of the local tribes.",
+          "directions": "Drive to trailhead and walk 2 miles up the creek.",
+          "image": "background3.JPG",
+          "comments": "Watch out for snakes!"
         }
       ]
     },
@@ -133,14 +140,15 @@
         {
           "region": "Mexico",
           "name": "Up Paddle Creek",
-          "link": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
-          "map": "https://goo.gl/maps/tW5JBiUbUcoBDSeq5",
+          "link": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
+          "map": "https://goo.gl/maps/2iXhgw9sgfatKkpE8",
           "gpsCoordinates": "41.40338, 2.17403",
           "latitude": "41.40338",
           "longitude": "2.17403",
-          "comments": "comments",
-          "directions": "directions",
-          "image": "background3.JPG"
+          "description": "This is a great site showing the artwork of the local tribes.",
+          "directions": "Drive to trailhead and walk 2 miles up the creek.",
+          "image": "background3.JPG",
+          "comments": "Watch out for snakes!"
         }
       ]
     }
